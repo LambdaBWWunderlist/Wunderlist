@@ -1,7 +1,7 @@
 
 /* Importing style from Normalize.css and main.css for repeated styles such as buttons, links, and nav */
 @import 'normalize.css';
-/* @import 'main.css'; */
+@import 'main.css';
 
 
 /* CSS RESET - uncomment out to reset CSS */

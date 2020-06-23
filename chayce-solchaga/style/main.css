@@ -1,7 +1,4 @@
 
-/* Importing style from Normalize.css */
-@import 'normalize.css';
-@import 'main.css';
 
 /* CSS RESET - uncomment out to reset CSS */
 /* html, body, div, span, applet, object, iframe,
@@ -25,26 +22,85 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }  */
 
+/*the browser default font-size is 16px if we set html to 62.5% then 1 rem = 10px to make math easier we use percentage because % is a scalable unit and px are not - this gives user more control over their font sizes*/
+html{
+	font-size: 62.5%; 
+}
+  body{
+	font-size: 1.6rem;
+}
 
-/* CSS RESET - uncomment out to reset CSS */
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}  */
+/* Header and Nav CSS  */
+  header{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.companyName{
+    display: flex;
+    justify-content: space-between;
+}
+.companyName h1{
+    font-size: 1.5rem;
+}
+nav{ 
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+nav .links{
+    display: flex;
+    flex-direction: row;
+}
+nav .links a{
+    padding: 5px;
+}
+.hero{
+    bacground-image: url('chayce-solchaga/assets/images/cars-on-road-during-night-time-4177663.jpg');
+    
+}
+.hero p{
+    width: 40%;
+}
 
+
+/* Footer CSS */
+footer{
+    background-color: #81A4CD;
+}
+.footerCompanyName{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerCompanyName h2{
+    font-size: 1.5rem;
+}
+.footerBar{
+    display: flex;
+    justify-content: space-between
+}
+footer nav{
+    background-color: #81A4CD;
+}
+.footerNavBlock{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    padding: 0.5%;
+    margin-right: 5%;   
+}
+.footerButtons{
+    margin-left: 0.5%;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.smIcons{
+    height: 40px;
+    align-items: center;
+}
