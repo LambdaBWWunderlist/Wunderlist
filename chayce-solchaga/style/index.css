@@ -25,10 +25,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }  */
 
+header{
+    /* background-color: red; */
+    background-image: url('chayce-solchaga/assets/images/herobg.jpg');
+}
 
 .hero{
-    bacground-image: url('chayce-solchaga/assets/images/cars-on-road-during-night-time-4177663.jpg');
-    
+    background-color:
+
 }
 .hero p{
     width: 40%;
@@ -51,7 +55,6 @@ time, mark, audio, video {
 }
 .coreFeature{
     width: 40%;
-    background-image: url('chayce-solchaga/assets/images/cars-on-road-during-night-time-4177663.jpg');
     /* border: 2px solid red; */
     margin: 1%;
 }
@@ -65,24 +68,34 @@ time, mark, audio, video {
     background-color: #DBE4EE;
 }
 #integrations{
-
+    margin-left: 1%;
 }
 .integrationText{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
 }
 .partnerLogos{
     display: flex;
-    flex-wrap: wrap
-}
-.partnerLogoph{
-    height: 50px;
-    width: 70px;
-    border: 2px solid black;
-    flex: 1 1 20%; 
-    margin: 5px;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2%;
+    justify-content: space-evenly;
     align-items: center;
 }
+.partnerLogoph{
+    display: flex;
+    height: 150px;
+    width: 60px;
+    flex: 1 1 20%; 
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.partnerLogoph img{
+   max-width: 50%;
+} 
 #testimonials{
     background-color: #DBE4EE;
 }

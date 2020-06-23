@@ -85,6 +85,7 @@ nav{
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    background-color: #DBE4EE;
 }
 nav .links{
     display: flex;
