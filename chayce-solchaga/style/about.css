@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }  */
 
-
+/* HERO/HEADER CSS */
 .about-hero{
     /* background-image: linear-gradient(to right, #FFF , #F17300); */
     background-image: url('about-hero.jpg');  
@@ -67,6 +67,8 @@ time, mark, audio, video {
     width: 10%;
     margin: 1%;
 }
+
+/* CULTURE AND VALUES */
 .culture{
     background-color: #DBE4EE;
     padding: 2%;
@@ -89,6 +91,8 @@ time, mark, audio, video {
     /* border: 2px solid red; */
     margin: 1%;
 }
+
+/* THE TEAM */
 #team{
     display: flex;
     flex-direction: column;
@@ -125,6 +129,8 @@ align-items: center;
     width: 200px;
     border-radius: 100px;
 }
+
+/* APPLY NOW */
 #apply{
     display: flex;
     flex-direction: row;

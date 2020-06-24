@@ -25,6 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }  */
 
+/* HEADER */
 header{
     /* background-color: red; */   
 }
@@ -66,6 +67,8 @@ header{
 .hero-img img{
     width: 100%;
 }
+
+/* FEATURES */
 #features{
     background-color: #DBE4EE;
     padding: 2%;
@@ -87,6 +90,8 @@ header{
     /* border: 2px solid red; */
     margin: 1%;
 }
+
+/* PRICING */
 #pricing{
 }
 .pricingInfo{
@@ -132,6 +137,8 @@ header{
 /* .inline-icons{
     width: 3%;
 } */
+
+/* PARTNERS */
 #integrations{
     margin-left: 1%;
     display: flex;
@@ -170,6 +177,8 @@ header{
 .partnerLogoph img{
    max-width: 50%;
 } 
+
+/* TESTIMONIALS */
 #testimonials{
     display: flex;
     flex-direction: column;
