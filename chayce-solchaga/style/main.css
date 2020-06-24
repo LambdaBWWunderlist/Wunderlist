@@ -36,14 +36,36 @@ html{
   body{
 	font-size: 1.6rem;
 }
-#toplink{
-    color: #F17300;
+.to-top{
+	color:#81A4CD;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:#81A4CD;
+	text-decoration:none;
+	transition:all .3s ease-out;
 }
-#toplink:hover{
-    color: #F17300;
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.9em;
+	border:solid .13em #81A4CD;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
 }
-#toplink:visited{
-    color: #F17300;
+.to-top:hover{
+	color:#f17300;
+	border-color:#f17300;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
 }
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;

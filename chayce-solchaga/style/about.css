@@ -63,6 +63,10 @@ time, mark, audio, video {
 .hero-img img{
     width: 100%;
 }
+.inline-icons{
+    width: 10%;
+    margin: 1%;
+}
 .culture{
     background-color: #DBE4EE;
     padding: 2%;
@@ -86,7 +90,9 @@ time, mark, audio, video {
     margin: 1%;
 }
 #team{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .team-box{
 display: flex;
