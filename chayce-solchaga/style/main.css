@@ -30,7 +30,8 @@ time, mark, audio, video {
 /* Universal Styles */
 /*the browser default font-size is 16px if we set html to 62.5% then 1 rem = 10px to make math easier we use percentage because % is a scalable unit and px are not - this gives user more control over their font sizes*/
 html{
-	font-size: 62.5%; 
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
 }
   body{
 	font-size: 1.6rem;
@@ -101,7 +102,7 @@ nav .links a{
     padding: 5px;
 }
 nav .links a button{
-    
+
 }
 
 

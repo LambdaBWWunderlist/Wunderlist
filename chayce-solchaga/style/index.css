@@ -30,12 +30,29 @@ header{
     background-image: url('chayce-solchaga/assets/images/herobg.jpg');
 }
 
-.hero{
-    background-color:
+#hero{
 
 }
-.hero p{
+.hero{
+    background-image: linear-gradient(to right, #FFF , #F17300);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.hero-text{
     width: 40%;
+}
+.hero p{
+    width: 80%;
+}
+.hero-img{
+    width: 40%;
+}
+.hero-img img{
+    width: 100%;
 }
 #features{
     background-color: #DBE4EE;
@@ -68,27 +85,43 @@ header{
 .pricingText {
     display: flex;
     flex-direction: row;
-    padding: 5%;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
+}
+.pricingText p{
+    width: 80%;
 }
 .pricingText2 {
     display: flex;
     flex-direction: row-reverse;
     background-color: #DBE4EE;
-    padding: 5%;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-.pricingText p{
-    width: 40%;
+    justify-content: space-between;
+    align-items: center;
 }
 .pricingText2 p{
-    width: 40%;
+    width: 80%;
 }
-.pricing-ent{
-    
+.pricingTextBox{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-left: 8%;
 }
+
+
+
+#pricingimg1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+#pricingimg1 img{
+    height: 100%;
+    width: 50%;
+}
+
 /* .inline-icons{
     width: 3%;
 } */
