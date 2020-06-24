@@ -28,11 +28,40 @@ time, mark, audio, video {
 
 
 .about-hero{
-    background-image: url('chayce-solchaga/assets/images/cars-on-road-during-night-time-4177663.jpg');
-    
+    /* background-image: linear-gradient(to right, #FFF , #F17300); */
+    background-image: url('about-hero.jpg');  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-size: 1.75rem;
 }
-.about-hero p{
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 40%;
+    background-color: #DBE4EE;
+    opacity: 0.75;
+    padding: 20px;
+}
+.heroTitle{
+    padding-left: 20px;
+}
+.hero-buttons{    
+}
+.hero p{
+    width: 80%;
+}
+.hero-img{
+    width: 20%;
+}
+.hero-img img{
+    width: 100%;
 }
 .culture{
     background-color: #DBE4EE;

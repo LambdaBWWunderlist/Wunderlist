@@ -26,12 +26,9 @@ time, mark, audio, video {
 }  */
 
 header{
-    /* background-color: red; */
-    
+    /* background-color: red; */   
 }
-
 #hero{
-
 }
 .hero{
     /* background-image: linear-gradient(to right, #FFF , #F17300); */
@@ -58,8 +55,7 @@ header{
 .heroTitle{
     padding-left: 20px;
 }
-.hero-buttons{
-    
+.hero-buttons{    
 }
 .hero p{
     width: 80%;
@@ -92,7 +88,6 @@ header{
     margin: 1%;
 }
 #pricing{
-    
 }
 .pricingInfo{
     display: flex;
@@ -123,9 +118,6 @@ header{
     width: 45%;
     padding-left: 8%;
 }
-
-
-
 #pricingimg1{
     display: flex;
     flex-direction: column;
@@ -137,7 +129,6 @@ header{
     height: 100%;
     width: 50%;
 }
-
 /* .inline-icons{
     width: 3%;
 } */
@@ -210,4 +201,3 @@ header{
     width: 100px;
     border-radius: 50px;
 }
-
