@@ -80,19 +80,48 @@ p{
     font-family: 'Raleway', sans-serif;
 }
 a {
+    color: #054A91;
+    font-family: 'Raleway', sans-serif;
+}
+a:hover {
+    color: #F17300;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline overline;
+}
+a:visited {
+    color: #054A91;
     font-family: 'Raleway', sans-serif;
 }
 blockquote{
     font-style: italic;
 }
 #light-button{
-
+    color: #f17300;
+    padding: ;
+    background: transparent;
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
 }
-button .dark-button {
-    position: absolute;
-    background: #054A91;
+#light-button:hover{
+    background: #f17300;
+    color: #fff;
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
+}
+#dark-button {
+    background: #f17300;
     color: #FFF;
-    /* border-radius: px; */
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
+    margin: 1%;
+}
+#dark-button:hover {
+    background: transparent;
+    color: #f17300;
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
+    margin: 1%;
+
 }
 
 /* Header and Nav CSS  */
