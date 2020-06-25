@@ -49,6 +49,7 @@ time, mark, audio, video {
         flex-wrap: wrap;
         flex-basis: auto;
         width: 100%;
+        height: 100%;
     }
     .hero-text{
         height: 100%;
@@ -581,7 +582,7 @@ time, mark, audio, video {
 /* HEADER */
 header{
     /* background-color: red; */ 
-    height: 80vh;
+    /* height: 80vh; */
 }
 #hero{
 }
@@ -595,7 +596,8 @@ header{
 .hero-text{
     opacity: 0.75;
     background-color: #DBE4EE;
-    padding: 20px;
+    padding: 20px; 
+    margin: -10px;
 }
 .heroTitle{
     padding-left: 20px;
