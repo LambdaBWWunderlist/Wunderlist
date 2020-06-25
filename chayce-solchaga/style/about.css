@@ -4,7 +4,7 @@
 @import 'main.css';
 
 
-/* CSS RESET - uncomment out to reset CSS */
+/*  --- CSS RESET - uncomment out to reset CSS  --- */
 /* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,9 +26,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }  */
 
-/* MEDIA QUERIES */
+/*  --- MEDIA QUERIES  ---  */
 
-/* For mobile phones: */
+/* --- For mobile phones: --- */
 @media only screen and (max-width: 500px) {
     /* HEADER AND HERO */
     header{
@@ -156,7 +156,7 @@ time, mark, audio, video {
          }
 
 }
-/* For Tablets: */
+/* --- For Tablets: --- */
 @media only screen and (max-width: 800px) and (min-width: 501px) {
     /* HEADER AND HERO */
     header{
@@ -233,7 +233,6 @@ time, mark, audio, video {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        flex-basis: 
         justify-content: space-around;
         align-items: center;
     }
@@ -271,8 +270,7 @@ time, mark, audio, video {
         width: 200%;
     }
 }
-
-/* For Laptops/Desktops: */
+/* --- For Laptops/Desktops: ---  */
 @media only screen and (min-width: 801px){
     /* HERO AND HEADER */
     .about-hero{
@@ -385,9 +383,8 @@ time, mark, audio, video {
     }
 
 }
-
-/* PAGE SPECIFIC CSS */
-/* HERO/HEADER CSS */
+/* --- PAGE SPECIFIC CSS --- */
+/* HERO/HEADER */
 .about-hero{
     /* background-image: linear-gradient(to right, #FFF , #F17300); */
     background-image: url('about-hero.jpg');  
