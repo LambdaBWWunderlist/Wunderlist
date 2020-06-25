@@ -1,0 +1,195 @@
+/* CSS RESET - uncomment out to reset CSS */
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}  */
+
+/* External Styles */
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* Universal Styles */
+/*the browser default font-size is 16px if we set html to 62.5% then 1 rem = 10px to make math easier we use percentage because % is a scalable unit and px are not - this gives user more control over their font sizes*/
+html{
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+  body{
+	font-size: 1.6rem;
+}
+.to-top{
+	color:#81A4CD;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:#81A4CD;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.9em;
+	border:solid .13em #81A4CD;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:#f17300;
+	border-color:#f17300;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    color: #054A91;
+}
+h3{
+    color: #3E7CB1;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    color: #054A91;
+    font-family: 'Raleway', sans-serif;
+}
+a:hover {
+    color: #F17300;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline overline;
+}
+a:visited {
+    color: #054A91;
+    font-family: 'Raleway', sans-serif;
+}
+blockquote{
+    font-style: italic;
+}
+#light-button{
+    color: #f17300;
+    padding: ;
+    background: transparent;
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
+}
+#light-button:hover{
+    background: #f17300;
+    color: #fff;
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
+}
+#dark-button {
+    background: #f17300;
+    color: #FFF;
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
+    margin: 1%;
+}
+#dark-button:hover {
+    background: transparent;
+    color: #f17300;
+    border: 2px solid #f17300;
+    font-family: 'Raleway', sans-serif;
+    margin: 1%;
+
+}
+
+/* Header and Nav CSS  */
+  header{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.companyName{
+    display: flex;
+    justify-content: space-between;
+}
+.companyName h1{
+    font-size: 1.5rem;
+}
+nav{ 
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #DBE4EE;
+}
+nav .links{
+    display: flex;
+    flex-direction: row;
+}
+nav .links a{
+    padding: 5px;
+}
+
+
+/* Footer CSS */
+footer{
+    background-color: #81A4CD;
+}
+.footerCompanyName{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerCompanyName h3{
+    font-size: 1.25rem;
+}
+.footerBar{
+    display: flex;
+    justify-content: space-between
+}
+footer nav{
+    background-color: #81A4CD;
+}
+.footerNavBlock{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 0.5%;
+    margin-right: 4%;   
+}
+.footerButtons{
+    margin-left: 0.5%;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFF;
+    padding: 1%;
+}
+.smIcons{
+    height: 40px;
+    align-items: center;
+}

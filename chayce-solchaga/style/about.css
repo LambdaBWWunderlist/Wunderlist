@@ -1,0 +1,434 @@
+
+/* Importing style from Normalize.css and main.css for repeated styles such as buttons, links, and nav */
+@import 'normalize.css';
+@import 'main.css';
+
+
+/*  --- CSS RESET - uncomment out to reset CSS  --- */
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}  */
+
+/*  --- MEDIA QUERIES  ---  */
+
+/* --- For mobile phones: --- */
+@media only screen and (max-width: 500px) {
+    /* HEADER AND HERO */
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .about-hero{
+        flex-wrap: wrap;
+        flex-basis: auto;
+        width: 100%;
+        height: 100%;
+    }
+    .hero-text{
+        height: 100%;
+        width: 100%;
+        opacity: 0.75;
+    }
+    .hero p{
+        font-size: 1.5rem;
+    }
+    .hero-img{
+        display: none;
+    }
+
+    /* CULTURE AND VALUES */
+    #culture{
+        display: flex;
+        justify-content: center;
+    }
+    .cultureBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cultureGrid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 1%;
+    }
+    .cultureGrid img{
+        display: flex;
+        justify-content: center
+    }
+    /* THE TEAM */
+        #team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .team-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        }
+        .team-grid{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .team-member{
+            margin: 0 auto;
+        }
+
+        .employee-photo-ph{
+            background-color: #f5f5f5;
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+        }
+        .employee-photo-ph img{
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            
+        }
+        .emp-socials{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .emp-socials a{
+            margin: 1%;
+        }
+        
+        /* APPLY NOW */
+        #apply{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #apply h3{
+            font-size: 1.5rem;
+        }
+    
+    /* FOOTER */
+         .footerNavBlock{
+             display: none;
+         }
+     
+         footer h2{
+             font-size: 1rem;
+         }
+         .footerButtons{
+             display: flex;
+             flex-direction: row;
+         }
+
+}
+/* --- For Tablets: --- */
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+    /* HEADER AND HERO */
+    header{
+        /* background-color: red; */ 
+        height: 80vh;
+    }
+    .about-hero{
+        /* background-image: linear-gradient(to right, #FFF , #F17300); */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        font-size: 1.75rem;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 80%;
+        background-color: #DBE4EE;
+        opacity: 0.75;
+        padding: 20px;
+    }
+    .heroTitle{
+        padding-left: 20px;
+    }
+    nav a{
+        font-size: 1rem;
+    }
+
+    .hero p{
+        width: 50%;
+        height: 90%;
+    }
+    .hero-img{
+        width: 60%;
+    }
+    /* CULTURE */
+    #culture{
+        display: flex;
+        justify-content: center;
+    }
+    .cultureBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cultureGrid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 1%;
+    }
+    .cultureGrid img{
+        display: flex;
+        justify-content: center
+    }
+
+/* TEAM */
+    #team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-grid{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .team-member{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        width: 40%;
+        align-items: center;
+    }
+    .employee-photo-ph{
+        background-color: #f5f5f5;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+    .employee-photo-ph img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+    /* APPLY NOW */
+    #apply{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color:#DBE4EE;
+    }
+    #apply h3{
+        font-size: 4.5rem;
+    }
+    #apply button{
+        margin-top: 2%;
+        height: 100%;
+        width: 200%;
+    }
+}
+/* --- For Laptops/Desktops: ---  */
+@media only screen and (min-width: 801px){
+    /* HERO AND HEADER */
+    .about-hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        font-size: 1.75rem;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        padding: 20px;
+    }
+    .heroTitle{
+        padding-left: 20px;
+    }
+    .hero-buttons{    
+    }
+    .hero p{
+        width: 80%;
+    }
+    .hero-img{
+        width: 20%;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+    .inline-icons{
+        width: 10%;
+        margin: 1%;
+    }
+
+    /* CULTURE AND VALUES */
+    .culture{
+        padding: 2%;
+    }
+    .cultureGrid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        flex-basis: auto;
+        padding: 1%;
+    }
+    .cultureBox{
+        /* border: 2px solid blue; */
+    }
+    .value-descr{
+        width: 40%;
+        /* border: 2px solid red; */
+        margin: 1%;
+    }
+        /* THE TEAM */
+    #team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .team-grid{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .team-member{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        width: 25%;
+        align-items: center;
+    }
+    .employee-photo-ph{
+        background-color: #f5f5f5;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+    .employee-photo-ph img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+
+    /* APPLY NOW */
+    #apply{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color:#DBE4EE;
+    }
+    #apply h3{
+        font-size: 4.5rem;
+    }
+    #apply button{
+        margin-top: 2%;
+        height: 100%;
+        width: 200%;
+    }
+
+}
+/* --- PAGE SPECIFIC CSS --- */
+/* HERO/HEADER */
+.about-hero{
+    /* background-image: linear-gradient(to right, #FFF , #F17300); */
+    background-image: url('about-hero.jpg');  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-text{
+    background-color: #DBE4EE;
+    opacity: 0.75;
+    padding: 10px;
+}
+.heroTitle{
+    padding-left: 20px;
+}
+.hero-buttons{    
+}
+.hero p{
+    width: 80%;
+}
+.hero-img{
+    width: 20%;
+}
+.hero-img img{
+    width: 100%;
+}
+.inline-icons{
+    width: 10%;
+    margin: 1%;
+}
+
+/* CULTURE AND VALUES */
+.culture{
+    background-color: #DBE4EE;
+}
+
+/* THE TEAM */
+
+.employee-photo-ph{
+    background-color: #f5f5f5;
+}
+
+/* APPLY NOW */
+#apply{
+    background-color:#DBE4EE;
+}
+
